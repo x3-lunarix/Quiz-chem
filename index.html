@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ketthai Quiz - เคมีปฏิบัติการ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ketthai Quiz</h1>
+            <p class="subtitle">แบบทดสอบเคมีปฏิบัติการ 40 ข้อ</p>
+        </header>
+
+        <div class="start-container">
+            <button class="btn btn-start pulse" id="startBtn">เริ่มทำแบบทดสอบ</button>
+        </div>
+
+        <div class="quiz-container" id="quizContainer">
+            <div class="timer" id="timer">
+                <i class="fas fa-clock"></i>
+                <span id="time">60:00</span>
+            </div>
+
+            <div id="questions"></div>
+
+            <button class="btn btn-submit" id="submitBtn">ส่งคำตอบ</button>
+        </div>
+
+        <div class="result-container" id="resultContainer">
+            <h2>ผลลัพธ์ของคุณ</h2>
+            <div class="score" id="score">0/40</div>
+            <div class="feedback" id="feedback"></div>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            
+            <p id="correctAnswers"></p>
+            <button class="btn" id="restartBtn">ทำแบบทดสอบอีกครั้ง</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
